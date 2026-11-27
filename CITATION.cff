@@ -7,6 +7,7 @@ authors:
     given-names: "Christian"
     affiliation: "NDIKI Labs"
 repository-code: "https://github.com/ndiki-labs/math"
+date-released: "2026-11-27"
 version: "erdos-556-c9-v1.0"
 keywords:
   - ramsey-theory

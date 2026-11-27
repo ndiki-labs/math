@@ -9,6 +9,7 @@ authors:
 repository-code: "https://github.com/ndiki-labs/math"
 date-released: "2026-11-27"
 version: "erdos-556-c9-v1.0.1"
+doi: "10.5281/zenodo.24605340"
 keywords:
   - ramsey-theory
   - graph-theory

@@ -6,7 +6,7 @@
 *Manuscrit de travail pour relecture mathématique · 27 novembre 2026*\
 [Dossier autonome en français](https://github.com/ndiki-labs/math/blob/main/erdos-556-ramsey-c9/README.fr.md)
 
-Nous présentons un argument assisté par ordinateur pour établir $R(C_9,C_9,C_9)=33$. Episteme a mené l'essentiel de l'exploration de la preuve avec son moteur de raisonnement, Episteme-R. La borne inférieure repose sur un coloriage en quatre blocs, vérifié dans Lean 4. Pour la borne supérieure, nous majorons le nombre d'indépendance des graphes de couleur, ramenons le problème à un graphe induit dense d'ordre minimal et vérifions les attaches possibles autour de cycles courts et de cliques. Le dossier contient les annexes de preuve et le code source des vérificateurs.
+Nous présentons un argument assisté par ordinateur pour établir $R(C_9,C_9,C_9)=33$. Episteme a mené l'essentiel de l'exploration de la preuve avec son moteur de raisonnement, Episteme-R. La borne inférieure repose sur un coloriage en quatre blocs, vérifié dans Lean 4. Pour la borne supérieure, nous majorons le nombre d'indépendance des graphes de couleur, ramenons le problème à un graphe induit dense d'ordre minimal et vérifions les attaches possibles autour de cycles courts et de cliques. Le dossier contient les annexes de preuve et le code source des vérificateurs. La formalisation de la borne supérieure dans Lean reste partielle.
 
 ## 1. Énoncé et borne inférieure
 
@@ -70,7 +70,9 @@ L'analyse des cas exclut le graphe minimal $H$. Le coloriage supposé de $K_{33}
 
 ## Reproductibilité et relecture
 
-Les vérifications finies se reproduisent indépendamment d'Episteme à partir des annexes, du code source des vérificateurs et des sorties de référence. L'index des annexes indique la provenance et l'empreinte SHA-256 de chaque pièce. La relecture mathématique doit aussi établir que les calculs couvrent tous les cas de chaque lemme. Le projet Lean formalise la borne inférieure, la représentation des graphes de couleur et les déductions arithmétiques indiquées. L'objectif principal qui reste à établir dans Lean est `RamseyC9.HasRamseyProperty 33`. [Dossier et instructions de rejeu](README.fr.md)
+Les vérifications finies se reproduisent indépendamment d'Episteme à partir des annexes, du code source des vérificateurs et des sorties de référence. L'index des annexes indique la provenance et l'empreinte SHA-256 de chaque pièce. La relecture mathématique doit aussi établir que les calculs couvrent tous les cas de chaque lemme. [Dossier et instructions de rejeu](README.fr.md)
+
+Lean vérifie la borne inférieure et plusieurs étapes de la preuve de la borne supérieure, dont le budget numérique des blocs, la réduction à un sous-graphe induit dense minimal et les lemmes de chemins. Il vérifie aussi le recensement des 1 094 encodages du cas $K_5$. Le théorème de composition `RamseyC9.isRamseyNumber33_of_reductions` prend cinq hypothèses explicites qui restent à démontrer dans Lean. La preuve de `RamseyC9.HasRamseyProperty 33` achèvera la formalisation. [UpperBound.lean](lean/RamseyC9/UpperBound.lean#L9) · [Obligations de preuve](AUDIT.fr.md#périmètre-de-la-formalisation)
 
 ## Le rôle d'Episteme dans la recherche
 

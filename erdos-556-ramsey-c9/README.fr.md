@@ -33,6 +33,8 @@ lake build
 
 Le noyau vérifie la construction de $K_{32}$ et ses restrictions, l'équivalence entre cycle monochromatique et cycle dans un graphe de couleur, le seuil de 176 arêtes et les inégalités arithmétiques des coupes. Le journal du build contient l'audit des axiomes de ces théorèmes. Le projet utilise la bibliothèque standard de Lean.
 
+Pour la borne supérieure, Lean vérifie aussi le budget numérique des blocs, la réduction à un sous-graphe induit minimal, des lemmes de chemins qui ferment un cycle de longueur neuf et le recensement des 1 094 encodages du cas $K_5$. Le théorème de composition prend cinq obligations de preuve comme hypothèses explicites. [État de la formalisation et obligations restantes](AUDIT.fr.md#périmètre-de-la-formalisation)
+
 ## Lire et rejouer les preuves archivées
 
 Le rejeu utilise Python 3.10 ou ultérieur et un compilateur C++20. Les 28 sorties ont été reproduites à l'octet près avec Python 3.13.7 et Apple Clang 17. Certaines étapes recompilent et recalculent leurs propres dépendances.

@@ -48,4 +48,16 @@ Le vérificateur de relecture construit les 1 094 noyaux à partir du multiens
 
 Lean vérifie `RamseyC9.no_ramsey_through_32` et ramène `RamseyC9.IsRamseyNumber 33` à `RamseyC9.HasRamseyProperty 33`. Il vérifie aussi les calculs des seuils de coupe et du nombre de voisinages disjoints. L'énoncé public en Lean décrit un cycle de longueur neuf par une application injective sur les sommets et neuf contraintes sur les arêtes consécutives, y compris celle qui ferme le cycle. Le module sur les graphes de couleur relie cette définition à un cycle dans un graphe simple et établit l'existence d'une couleur à au moins 176 arêtes.
 
-Pour achever la borne supérieure dans Lean, il faut déduire l'hypothèse sur le bloc dense de l'existence d'un graphe de couleur dense, puis formaliser la borne sur le nombre d'indépendance. L'argument de densité sur les sous-graphes induits doit garder explicites les théorèmes importés sur les cycles jusqu'à leur formalisation. Pour chaque dénombrement fini, il faut énoncer le lemme de couverture et prouver que chaque rejet certifie un chemin, un cycle, une clique interdite ou une inégalité de taille. Le lien entre le résultat d'un vérificateur et l'énoncé sur le graphe de départ constitue la principale obligation de preuve. La relecture mathématique indépendante de l'ensemble de la borne supérieure reste à faire.
+Lean vérifie le plafond de 175 arêtes pour des blocs d'ordre au plus 24, sous les contraintes de taille et de nombre d'arêtes par bloc, et les neuf seuils des blocs d'ordre supérieur. Étant données la décomposition en blocs et la borne extrémale, il construit un bloc induit dense. Lean vérifie aussi la réduction à un sous-graphe induit minimal dans la classe héréditaire et les lemmes de chemins qui ferment un cycle de longueur neuf. [Budget des blocs](lean/RamseyC9/BlockBudget.lean) · [Réduction aux sous-graphes induits](lean/RamseyC9/DensityReduction.lean) · [Lemmes de chemins](lean/RamseyC9/Paths.lean)
+
+Le théorème de composition prend cinq hypothèses explicites qui restent à démontrer dans Lean.
+
+1. La borne d'indépendance de 12 par couleur dans un coloriage qui évite tout cycle monochromatique de longueur neuf.
+2. L'existence de la décomposition en blocs requise.
+3. La borne extrémale sur le nombre d'arêtes des graphes sans cycle de longueur neuf.
+4. La réduction du bloc dense aux ordres 32 et 33 et à la classe héréditaire.
+5. L'exclusion d'un graphe dense minimal dans cette classe.
+
+[Théorème de composition](lean/RamseyC9/UpperBound.lean)
+
+Pour le cas $K_5$, Lean certifie le recensement des 1 094 encodages et l'inclusion de tout encodage admissible après tri. Il reste à relier chaque graphe candidat à un encodage et à démontrer que les exclusions du vérificateur impliquent la borne voulue sur le graphe. La relecture mathématique indépendante de l'ensemble de l'argument de la borne supérieure reste à faire. [Recensement](lean/RamseyC9/K5EarKernels.lean)

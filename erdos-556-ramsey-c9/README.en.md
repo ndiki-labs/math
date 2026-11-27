@@ -33,6 +33,8 @@ lake build
 
 The kernel verifies the construction on $K_{32}$ and its restrictions, the equivalence between monochromatic cycles and cycles in a colour graph, the 176-edge threshold and the arithmetic for the cut bounds. The build log records the axiom check for those theorems. The project uses the Lean standard library.
 
+For the upper bound, Lean also checks the numerical block budget, the reduction to a minimal induced subgraph, path lemmas for closing a 9-cycle and the census of 1,094 encodings for the $K_5$ case. The composition theorem takes five proof obligations as explicit hypotheses. [Formalization status and remaining obligations](AUDIT.md#formalization-boundary)
+
 ## Reading and replaying the archived proofs
 
 Replay uses Python 3.10 or later and a C++20 compiler. All 28 outputs were reproduced byte for byte with Python 3.13.7 and Apple Clang 17. Some stages compile and recompute their dependencies.

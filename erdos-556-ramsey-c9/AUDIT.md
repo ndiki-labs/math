@@ -48,4 +48,16 @@ The [review checker](review/k5_check.py) constructs the 1,094 nuclei from the mu
 
 Lean checks `RamseyC9.no_ramsey_through_32` and reduces `RamseyC9.IsRamseyNumber 33` to `RamseyC9.HasRamseyProperty 33`. It also checks the arithmetic for the cut thresholds and the number of disjoint neighbourhoods. The public Lean statement describes a 9-cycle by an injective vertex map and the nine consecutive edge constraints, including the closing edge. The colour-graph module connects this definition to a cycle in a simple graph and proves the existence of a colour with at least 176 edges.
 
-To complete the upper bound in Lean, prove the implication from the dense colour graph to the dense-block hypothesis and formalize the independence bound. Formalize the induced-subgraph density argument, keeping the imported cycle theorems explicit until they have proofs. For the finite appendices, state the coverage lemma for each census, then prove that each rejected case certifies a forbidden path, cycle, clique or size inequality. This implication from a checker result to the original graph statement is the main proof obligation. A separate mathematical review of the complete upper-bound chain is pending.
+Lean checks the 175-edge budget for blocks of order at most 24, subject to the block size and edge bounds, and all nine thresholds for larger blocks. Given a block decomposition and the extremal edge bound, it extracts a dense induced block. Lean also checks the reduction to a minimal induced subgraph in the hereditary class and the path lemmas that close a 9-cycle. [Block budget](lean/RamseyC9/BlockBudget.lean) · [Induced-subgraph reduction](lean/RamseyC9/DensityReduction.lean) · [Path lemmas](lean/RamseyC9/Paths.lean)
+
+The composition theorem takes five explicit hypotheses that still need Lean proofs.
+
+1. The independence bound of 12 for each colour in a colouring that avoids a monochromatic 9-cycle.
+2. The existence of the required block decomposition.
+3. The extremal edge bound for graphs with no 9-cycle.
+4. The restriction of the dense block to orders 32 and 33 and to the hereditary class.
+5. The exclusion of a minimal dense graph in that class.
+
+[Composition theorem](lean/RamseyC9/UpperBound.lean)
+
+For the $K_5$ case, Lean certifies the census of 1,094 encodings and that sorting any admissible encoding produces an entry. The proof still needs to connect every candidate graph to an encoding and to show that the checker's exclusions imply the required bound for the graph. Independent mathematical review of the complete upper-bound argument remains pending. [Census](lean/RamseyC9/K5EarKernels.lean)

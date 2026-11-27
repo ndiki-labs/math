@@ -6,7 +6,7 @@
 *Working manuscript for mathematical review · 27 November 2026*\
 [Standalone dossier](https://github.com/ndiki-labs/math/tree/main/erdos-556-ramsey-c9)
 
-We present a computer-assisted argument for $R(C_9,C_9,C_9)=33$. Episteme carried out the main proof exploration, guided by its reasoning engine, Episteme-R. The lower bound is given by a four-block colouring and is verified in Lean 4. The upper-bound argument uses an independence bound for the colour graphs, a reduction to a minimal dense induced graph, and finite checks of the possible attachments to short cycles and cliques. The research dossier contains the proof appendices and the source code for those checks.
+We present a computer-assisted argument for $R(C_9,C_9,C_9)=33$. Episteme carried out the main proof exploration, guided by its reasoning engine, Episteme-R. The lower bound is given by a four-block colouring and is verified in Lean 4. The upper-bound argument uses an independence bound for the colour graphs, a reduction to a minimal dense induced graph, and finite checks of the possible attachments to short cycles and cliques. The research dossier contains the proof appendices and the source code for those checks. The Lean formalization of the upper bound remains partial.
 
 ## 1. Statement and lower bound
 
@@ -70,7 +70,9 @@ The case analysis rules out the minimal graph $H$. Consequently the supposed col
 
 ## Reproduction and review
 
-The finite checks can be reproduced independently of Episteme from the proof appendices, checker source files and reference outputs supplied with the dossier. The appendix index records the provenance and SHA-256 of each item. The mathematical review must also establish that the computations cover all cases of each stated lemma. The Lean project formalizes the lower bound, the colour-graph model and the stated arithmetic deductions. In Lean, the remaining top-level goal is `RamseyC9.HasRamseyProperty 33`. [Dossier and reproduction instructions](README.en.md)
+The finite checks can be reproduced independently of Episteme from the proof appendices, checker source files and reference outputs supplied with the dossier. The appendix index records the provenance and SHA-256 of each item. The mathematical review must also establish that the computations cover all cases of each stated lemma. [Dossier and reproduction instructions](README.en.md)
+
+Lean verifies the lower bound and several steps of the upper-bound argument, including the numerical block budget, the reduction to a minimal dense induced subgraph and the path lemmas. It also verifies the census of 1,094 encodings for the $K_5$ case. The composition theorem `RamseyC9.isRamseyNumber33_of_reductions` takes five explicit hypotheses whose Lean proofs are pending. Proving `RamseyC9.HasRamseyProperty 33` would complete the formalization. [UpperBound.lean](lean/RamseyC9/UpperBound.lean#L9) · [Proof obligations](AUDIT.md#formalization-boundary)
 
 ## The role of Episteme in the investigation
 

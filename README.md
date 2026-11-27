@@ -4,7 +4,9 @@ Mathematical research dossiers developed with Episteme under the direction of Ch
 
 | Dossier | Status | Materials |
 | --- | --- | --- |
-| [The Three-Colour Ramsey Number of the 9-Cycle](erdos-556-ramsey-c9/) | Working manuscript. Lower bound verified in Lean 4. Proposed upper bound under mathematical review. | [Manuscript](erdos-556-ramsey-c9/MANUSCRIPT.md) · [Episteme case study](erdos-556-ramsey-c9/SHOWCASE.md) · [Audit](erdos-556-ramsey-c9/AUDIT.md) |
+| [The Three-Colour Ramsey Number of the 9-Cycle](erdos-556-ramsey-c9/) | Working manuscript for mathematical review. Lean 4 verifies the lower bound and parts of the upper-bound argument. | [Manuscript](erdos-556-ramsey-c9/MANUSCRIPT.md) · [Upper-bound formalization](erdos-556-ramsey-c9/lean/RamseyC9/UpperBound.lean) · [Audit](erdos-556-ramsey-c9/AUDIT.md) · [Episteme case study](erdos-556-ramsey-c9/SHOWCASE.md) |
+
+[Changelog](CHANGELOG.md)
 
 ## Citation and reuse
 

@@ -8,7 +8,7 @@ authors:
     affiliation: "NDIKI Labs"
 repository-code: "https://github.com/ndiki-labs/math"
 date-released: "2026-11-27"
-version: "erdos-556-c9-v1.0"
+version: "erdos-556-c9-v1.0.1"
 keywords:
   - ramsey-theory
   - graph-theory
@@ -16,6 +16,3 @@ keywords:
   - formal-verification
   - lean4
   - episteme
-license:
-  - MIT
-  - CC-BY-4.0

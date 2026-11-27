@@ -1,0 +1,5 @@
+name = "ramsey-c9"
+defaultTargets = ["RamseyC9"]
+
+[[lean_lib]]
+name = "RamseyC9"

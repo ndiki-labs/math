@@ -1,0 +1,23 @@
+{
+  "kernels": 1094,
+  "classification": {
+    "bare_ear": 1,
+    "disjoint_attachment_neighbourhoods": 278,
+    "one_attachment": 815
+  },
+  "bare_ear_incidence_caps": [
+    {
+      "23": 29,
+      "24": 31,
+      "25": 33,
+      "26": 35,
+      "27": 37,
+      "28": 39,
+      "29": 41,
+      "30": 43,
+      "31": 45,
+      "32": 47,
+      "33": 49
+    }
+  ]
+}

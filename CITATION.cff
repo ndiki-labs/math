@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "NDIKI Labs Mathematics: Episteme Verified Research Dossiers"
+message: "If you reference or build upon these manuscripts, Lean 4 formalizations, or exact verification certificates, please cite this repository."
+type: dataset
+authors:
+  - family-names: "Hissibini"
+    given-names: "Christian"
+    affiliation: "NDIKI Labs"
+repository-code: "https://github.com/ndiki-labs/math"
+version: "erdos-556-c9-v1.0"
+keywords:
+  - ramsey-theory
+  - graph-theory
+  - erdos-problems
+  - formal-verification
+  - lean4
+  - episteme
+license:
+  - MIT
+  - CC-BY-4.0

@@ -1,0 +1,430 @@
+{
+  "origin": {
+    "git_commit": "88da660f3e615bbae2f710431767a62ba9765500",
+    "checkpoint": "f9657221d77d45af733b1032d1a29248114ad86a64bc6f387413d4bb02e73d27",
+    "frozen_archive_sha256": "9813b89832b7ef08d201c63b63d157c578caf4531594f466e09941843b3de00a"
+  },
+  "archive_sha256": "85d5284adccfbce053a51769a20055e32f88e747e13880a8214dcfcbd23b0a8c",
+  "proofs": {
+    "answer-4": {
+      "reference_json": {
+        "path": "independence-c9/c9-stables-certificate.json",
+        "sha256": "9e9247e35e9578b1680d572332add5209a54539cb68615691358987e9f6af7ca"
+      },
+      "checker_zip": {
+        "path": "independence-c9/erdos-556-c9-stables-certificate.zip",
+        "sha256": "062dbbd7f6c2f3504448adf77a5c8d00459bdf2e2b28d6ea6142a2c54fa3e709"
+      },
+      "proof": {
+        "path": "independence-c9/C9-STABLES.md",
+        "sha256": "56f28f0d4d1b17e8c3230da1827d583d96f26467e562bbacfff11afc2d4c169b"
+      },
+      "entrypoint": "verify-c9-stables.py"
+    },
+    "answer-5": {
+      "reference_json": {
+        "path": "stable14-c9/stable14-certificate.json",
+        "sha256": "5f4e2d7691fa13fcbb75871b4a32496405269ba9319d16985c3a1dda46e483a9"
+      },
+      "checker_zip": {
+        "path": "stable14-c9/erdos-556-c9-stable14-certificate.zip",
+        "sha256": "fad5b9e665a2e14ef0db790f5d4d42dda8460bf244681bf074278bdb405077cf"
+      },
+      "proof": {
+        "path": "stable14-c9/C9-STABLE14.md",
+        "sha256": "d51f9985f34aad2c2b2ee22caa7aafa248c93a67ffeda8b76bb265940459f352"
+      },
+      "entrypoint": "verify-c9-stable14.py"
+    },
+    "answer-6": {
+      "reference_json": {
+        "path": "stable13-c9/stable13-certificate.json",
+        "sha256": "fed6dd2f4a657fd5b1ca67bef7a0f01182d604239483b8eabaad80b6c2b2e82f"
+      },
+      "checker_zip": {
+        "path": "stable13-c9/erdos-556-c9-stable13-certificate.zip",
+        "sha256": "813167d6f341d11dc01294beddc5370628fc9361cc82eb7751ec5851f993315d"
+      },
+      "proof": {
+        "path": "stable13-c9/C9-STABLE13.md",
+        "sha256": "097b5597c5cf2c77b5192643109aac1ae3b740a42d14c33c73f724b8a0f068ce"
+      },
+      "entrypoint": "verify-c9-stable13.py"
+    },
+    "answer-7": {
+      "reference_json": {
+        "path": "mono-extremal/mono-extremal-certificate.json",
+        "sha256": "49f40da547bee12a2c1666c1e618b4ea3d91c2b616c9ebd92ab26450255f605d"
+      },
+      "checker_zip": {
+        "path": "mono-extremal/erdos-556-c9-mono-extremal-certificate.zip",
+        "sha256": "2adc1829244686f703f6414d7919b9f50b83def1dc2e1ec853b3119772c4cf4e"
+      },
+      "proof": {
+        "path": "mono-extremal/C9-MONO-EXTREMAL.md",
+        "sha256": "4905d29c7b81ad880f3878db04474bf6114cb3f9f363a6fa2da3256be04ecaaf"
+      },
+      "entrypoint": "verify-c9-mono.py"
+    },
+    "answer-8": {
+      "reference_json": {
+        "path": "odd-block-c9/odd-block-certificate.json",
+        "sha256": "743ab2b59a16b0e2f656172f1f4b2ea2d292537545ff484039cf35757c5c231b"
+      },
+      "checker_zip": {
+        "path": "odd-block-c9/erdos-556-c9-odd-block-certificate.zip",
+        "sha256": "14ece6d341689653b539f7bfdb4a51ec9b1ed454b8cac686a83c832a644d22d0"
+      },
+      "proof": {
+        "path": "odd-block-c9/C9-ODD-BLOCK.md",
+        "sha256": "724fca96f932dbcbb86958ae84135112eb37c176f47fd18ee5c4b011a38d865f"
+      },
+      "entrypoint": "odd-block-c9/verify-c9-odd-block.py"
+    },
+    "answer-9": {
+      "reference_json": {
+        "path": "pentagon-layers-c9/pentagon-layers-certificate.json",
+        "sha256": "2afc6a0cd0f6d0989e475943877c6ec8b20b6c264d2a6603f5a89f33d53a0fdf"
+      },
+      "checker_zip": {
+        "path": "pentagon-layers-c9/erdos-556-c9-pentagon-layers-certificate.zip",
+        "sha256": "df0b3a866885fd301da990a1ec73f40de78428671e0e300c6323f49cf5049b0e"
+      },
+      "proof": {
+        "path": "pentagon-layers-c9/C9-PENTAGON-LAYERS.md",
+        "sha256": "55bf7bb2f116848331dd82b16652ab5169a864cd50d5e0a109104bcdca108917"
+      },
+      "entrypoint": "pentagon-layers-c9/verify-pentagon-layers.py"
+    },
+    "answer-10": {
+      "reference_json": {
+        "path": "clique-ears-c9/clique-ears-certificate.json",
+        "sha256": "270312da74c78c3a13667fd3c2dbb40492cf17c139c3ecdcf0ded409117c7577"
+      },
+      "checker_zip": {
+        "path": "clique-ears-c9/erdos-556-c9-clique-ears-certificate.zip",
+        "sha256": "13360032451cce916b72b0c7692e5b58cfa2049b98784ba061a68103057f66e2"
+      },
+      "proof": {
+        "path": "clique-ears-c9/C9-CLIQUE-EARS.md",
+        "sha256": "c77ecad2b9e595ef1d0d00f992f3954faad7dadb2299c789befb3b0798e07768"
+      },
+      "entrypoint": "clique-ears-c9/verify-clique-ears.py"
+    },
+    "answer-11": {
+      "reference_json": {
+        "path": "clique-closure-c9/clique-closure-certificate.json",
+        "sha256": "5aee8bd80633e206a40e886b8a1f3adeaf3f5581ff7e650bc04c1a8b70b8097d"
+      },
+      "checker_zip": {
+        "path": "clique-closure-c9/erdos-556-c9-clique-closure-certificate.zip",
+        "sha256": "165686519af4f521a2b7f8736a02632e500e41277ffb6bfc74e549877d08923e"
+      },
+      "proof": {
+        "path": "clique-closure-c9/C9-K6-CLOSURE.md",
+        "sha256": "716b303a32c51a1539d97eb093bcc3f1818185e1fa1c13871a11bda27bc3f994"
+      },
+      "entrypoint": "clique-closure-c9/verify-clique-closure.py"
+    },
+    "answer-12": {
+      "reference_json": {
+        "path": "triangle-packing-c9/triangle-packing-certificate.json",
+        "sha256": "4629f68d2b40665461795c22bb0889ba0fb7f14fe0f610a69d9817ce85c92541"
+      },
+      "checker_zip": {
+        "path": "triangle-packing-c9/erdos-556-c9-triangle-packing-certificate.zip",
+        "sha256": "69d4b17be77024de59ece77b8f5d4c01c79435289e1b941da527fb44c0bd25a1"
+      },
+      "proof": {
+        "path": "triangle-packing-c9/C9-TRIANGLE-PACKING.md",
+        "sha256": "16ae2d79daba9a32cec73d87145570273a7e241a1eade78580ac0627b7cfb27e"
+      },
+      "entrypoint": "triangle-packing-c9/verify-triangle-packing.py"
+    },
+    "answer-13": {
+      "reference_json": {
+        "path": "star-cut-attachments-c9/star-cut-attachments-certificate.json",
+        "sha256": "67cbb160f5f583f5fdc038b3d8539759f91b1f7f881eeed9886e3a319abb045f"
+      },
+      "checker_zip": {
+        "path": "star-cut-attachments-c9/erdos-556-c9-star-cut-attachments-certificate.zip",
+        "sha256": "e33e6fb48171963b3104af246aacc8aaeb5b5921f2be9507e06ddf7c49f83921"
+      },
+      "proof": {
+        "path": "star-cut-attachments-c9/C9-STAR-CUT-ATTACHMENTS.md",
+        "sha256": "4de0e90911934c43748b9058dcb34b54f010c4e124ab3b633b57b093925ed8e8"
+      },
+      "entrypoint": "star-cut-attachments-c9/verify-star-cut-attachments.py"
+    },
+    "answer-14": {
+      "reference_json": {
+        "path": "exterior-ear-closure-c9/exterior-ear-closure-certificate.json",
+        "sha256": "89601008c8b021d9ec59652d2616730308a1395249ab14dc81d801c04530360a"
+      },
+      "checker_zip": {
+        "path": "exterior-ear-closure-c9/erdos-556-c9-exterior-ear-closure-certificate.zip",
+        "sha256": "d4d1c5395ad40d9f25f14a6320d48c112b671e9edfa4a52e802682d878151b57"
+      },
+      "proof": {
+        "path": "exterior-ear-closure-c9/C9-EXTERIOR-EAR-CLOSURE.md",
+        "sha256": "aba338115d070253ac19fa359553c23016c32fa5e8a83528a46d7d4118752aeb"
+      },
+      "entrypoint": "exterior-ear-closure-c9/verify-exterior-ear-closure.py"
+    },
+    "answer-15": {
+      "reference_json": {
+        "path": "eleven-exterior-c9/eleven-exterior-certificate.json",
+        "sha256": "1bb1da74d462da40bb23fe08fc417db98ece1d84a6e89be144a9a9aa83a21c83"
+      },
+      "checker_zip": {
+        "path": "eleven-exterior-c9/erdos-556-c9-eleven-exterior-certificate.zip",
+        "sha256": "68cc21d3f243e7713446167b15575906a435a3e4ce6e92fc1f131cb234be9802"
+      },
+      "proof": {
+        "path": "eleven-exterior-c9/C9-ELEVEN-EXTERIOR.md",
+        "sha256": "342348fa0054e4e89f688c031b20e3bb6e13f3925955217f8247bd4244fac06e"
+      },
+      "entrypoint": "eleven-exterior-c9/verify-eleven-exterior.py"
+    },
+    "answer-16": {
+      "reference_json": {
+        "path": "twelve-exterior-c9/twelve-exterior-certificate.json",
+        "sha256": "bd3e13089c470bfb1af426b7c19a0d6b6c82c9c3af64ae7342a9be5c90b7ab6b"
+      },
+      "checker_zip": {
+        "path": "twelve-exterior-c9/erdos-556-c9-twelve-exterior-certificate.zip",
+        "sha256": "a13d52cf70afe133a46a78638201c74b1177617677bbe1c852a73f853fc1d4f6"
+      },
+      "proof": {
+        "path": "twelve-exterior-c9/C9-TWELVE-EXTERIOR.md",
+        "sha256": "2f68d4c9d457d56b8dae2cd71e6e33fde3fe6566532890adf693f8dfe339abf2"
+      },
+      "entrypoint": "twelve-exterior-c9/verify-twelve-exterior.py"
+    },
+    "answer-17": {
+      "reference_json": {
+        "path": "packing-bridges-c9/packing-bridges-certificate.json",
+        "sha256": "10538bcceb6b512ce6b79cb3f2ca2aa236b6702bf68e462df71ad3c77fa4a521"
+      },
+      "checker_zip": {
+        "path": "packing-bridges-c9/erdos-556-c9-packing-bridges-certificate.zip",
+        "sha256": "6b9e7a2922c66e7fe5ef3703745a39561721aebcea63cc1617eda594ebd64d28"
+      },
+      "proof": {
+        "path": "packing-bridges-c9/C9-PACKING-BRIDGES.md",
+        "sha256": "1f54ac044bd1638af9edf80963730c85c2e9bbb245c465eec262da5fdd6b889f"
+      },
+      "entrypoint": "packing-bridges-c9/verify-packing-bridges.py"
+    },
+    "answer-18": {
+      "reference_json": {
+        "path": "mixed-cuts-c9/mixed-cuts-certificate.json",
+        "sha256": "1ad2c993f3aebd2d5c2145562b26b56dd432a7306b0e11249553ba791850e2de"
+      },
+      "checker_zip": {
+        "path": "mixed-cuts-c9/erdos-556-c9-mixed-cuts-certificate.zip",
+        "sha256": "847f88a31d750640885c1907c3a76d57eb7374461d7a60437a4f2ff25c85b6fa"
+      },
+      "proof": {
+        "path": "mixed-cuts-c9/C9-MIXED-CUTS.md",
+        "sha256": "67cb31ed0f0d9bfb8d9c73d437156340a63065daf0f5012a31771f0e0bec3fab"
+      },
+      "entrypoint": "mixed-cuts-c9/verify-mixed-cuts.py"
+    },
+    "answer-19": {
+      "reference_json": {
+        "path": "brandt-and-three-cuts-c9/three-cuts-certificate.json",
+        "sha256": "b63a3afacb9f1648c9f386a1bbfc20d38892358832ff3cc6ce7a4be2fbe685e4"
+      },
+      "checker_zip": {
+        "path": "brandt-and-three-cuts-c9/erdos-556-c9-three-cuts-certificate.zip",
+        "sha256": "ceb0b019aa9fea4e5e61b985ce095c01fa11ecd4450f7258a638241cc8a367c4"
+      },
+      "proof": {
+        "path": "brandt-and-three-cuts-c9/C9-BRANDT-AND-THREE-CUTS.md",
+        "sha256": "a9f7491f222fadc5e1bee9e284237514a570a18e1b770b2b944fae9ad142d888"
+      },
+      "entrypoint": "brandt-and-three-cuts-c9/verify-three-cuts.py"
+    },
+    "answer-22": {
+      "reference_json": {
+        "path": "triangle-packing-frontier-c9/triangle-frontier-certificate.json",
+        "sha256": "3f2155fdcddab60c774bd9a13ff9d0b17a53abbf5ff79e4944299a87c33f6ce0"
+      },
+      "checker_zip": {
+        "path": "triangle-packing-frontier-c9/erdos-556-c9-triangle-frontier-certificate.zip",
+        "sha256": "04d8298d631c138474e1766b8024414198f7491af02e982d357b951f7919e89d"
+      },
+      "proof": {
+        "path": "triangle-packing-frontier-c9/C9-TRIANGLE-PACKING-FRONTIER.md",
+        "sha256": "8dd5d5601093a0c0ac984aa89bc19e6b70420da52e4da4fa09273147bb88a517"
+      },
+      "entrypoint": "triangle-packing-frontier-c9/verify-triangle-frontier.py"
+    },
+    "answer-24": {
+      "reference_json": {
+        "path": "degree-peeling-and-nine-c9/order30-and-nine-certificate.json",
+        "sha256": "e37cdaa1fa567ebc29324a77ef46633bd812935c53292342d2882828140387ec"
+      },
+      "checker_zip": {
+        "path": "degree-peeling-and-nine-c9/erdos-556-c9-order30-and-nine-certificate.zip",
+        "sha256": "a0a30b6459872cb91cc30c0cad54f4422923e44da28105137787173722579d44"
+      },
+      "proof": {
+        "path": "degree-peeling-and-nine-c9/C9-ORDER-30-AND-NINE-TRIANGLES.md",
+        "sha256": "c9d3dbfc066019561ff3f3316f7201265bd140b5b5e0959372bbe0c86ffe0f9c"
+      },
+      "entrypoint": "degree-peeling-and-nine-c9/verify-degree-peeling-and-nine.py"
+    },
+    "answer-25": {
+      "reference_json": {
+        "path": "order31-and-core-contacts-c9/order31-and-core-contacts-certificate.json",
+        "sha256": "72d6aff835cda95d7b48cbe2336d11ed336e1dd9a56241def52c186479a01485"
+      },
+      "checker_zip": {
+        "path": "order31-and-core-contacts-c9/erdos-556-c9-order31-and-core-contacts-certificate.zip",
+        "sha256": "a8e96b38f8d02e9df7522909887df8ed76e095912712b5a0d486d6727c2ddd47"
+      },
+      "proof": {
+        "path": "order31-and-core-contacts-c9/C9-ORDER-31-AND-CORE-CONTACTS.md",
+        "sha256": "4d5d90fb9e41f6f339570d96203c7c6a144723c58ae5577040b448b95fd384e7"
+      },
+      "entrypoint": "order31-and-core-contacts-c9/verify-order31-and-core-contacts.py"
+    },
+    "answer-26": {
+      "reference_json": {
+        "path": "bipartite-transition-and-eight-c9/bipartite-transition-and-eight-certificate.json",
+        "sha256": "d330ca96c34b7c67b544cfee07cd3fd468adb3704c6499640dd5d3ba51658f2e"
+      },
+      "checker_zip": {
+        "path": "bipartite-transition-and-eight-c9/erdos-556-c9-bipartite-transition-and-eight-certificate.zip",
+        "sha256": "7dce7008c094d47f99e851b7be03252436d424b3c470f73eb989ed89bee8591e"
+      },
+      "proof": {
+        "path": "bipartite-transition-and-eight-c9/C9-BIPARTITE-TRANSITIONS-AND-EIGHT.md",
+        "sha256": "4a0eaef1e081730e8ce575d93aa49def8d0db0ba52cc4f44142151172333fae4"
+      },
+      "entrypoint": "bipartite-transition-and-eight-c9/verify-bipartite-transition-and-eight.py"
+    },
+    "answer-27": {
+      "reference_json": {
+        "path": "coupled-marks-c9/coupled-marks-and-order31-certificate.json",
+        "sha256": "6036ee04c8d73bce8ed0750210f2904bae4a8915e0aa1d14c45c530d8c5747a2"
+      },
+      "checker_zip": {
+        "path": "coupled-marks-c9/erdos-556-c9-coupled-marks-and-order31-certificate.zip",
+        "sha256": "92a6756d0d6499de07910959edda3489f73a8cb5459a272a2345e45552eb2345"
+      },
+      "proof": {
+        "path": "coupled-marks-c9/C9-ORDER-31-AND-SHARED-MARKS.md",
+        "sha256": "85a5ce8826dec9e2f56a9eef0ba86f96d32414ae7a3481af237c742567d475d1"
+      },
+      "entrypoint": "coupled-marks-c9/verify-coupled-marks.py"
+    },
+    "answer-33": {
+      "reference_json": {
+        "path": "stable13-closure-c9/stable13-closure-certificate.json",
+        "sha256": "0c6c45987a72b7891fd89f7956908051153e97bd1a927be0955c3b6164ad2bf3"
+      },
+      "checker_zip": {
+        "path": "stable13-closure-c9/erdos-556-c9-stable13-closure-certificate.zip",
+        "sha256": "0d3a14f925749562bce825ea897561f76b5da4e8affedd515d9c88a190f507f6"
+      },
+      "proof": {
+        "path": "stable13-closure-c9/C9-STABLE13-CLOSURE.md",
+        "sha256": "3ba96e3dece26b210226654a70c89d8dd219ff78a4839958d3f78a0fa923bab9"
+      },
+      "entrypoint": "stable13-closure-c9/verify-stable13-closure.py"
+    },
+    "answer-35": {
+      "reference_json": {
+        "path": "independent-core-and-pentagons-c9/independent-core-and-pentagons-certificate.json",
+        "sha256": "ae61f03f764bf3b4427da671e263693acf49f69c991c3ba8ea4889a01939b80b"
+      },
+      "checker_zip": {
+        "path": "independent-core-and-pentagons-c9/erdos-556-c9-independent-core-and-pentagons-certificate.zip",
+        "sha256": "13aa9a6ce4548f1040dfe0efc15aaba927eca25e6463e654209c53686a5d6581"
+      },
+      "proof": {
+        "path": "independent-core-and-pentagons-c9/C9-INDEPENDENT-CORE-AND-PENTAGONS.md",
+        "sha256": "1d25995f56d554b86289566725f4cf260f2eca7f786687cec8551ade51a5bb1a"
+      },
+      "entrypoint": "independent-core-and-pentagons-c9/verify-independent-core-and-pentagons.py"
+    },
+    "answer-47": {
+      "reference_json": {
+        "path": "hereditary-density-c9/hereditary-density-certificate.json",
+        "sha256": "47442ccc883c60571aabfd9cd062c1d469f9600f1c0916a06e10522c5e3e46f2"
+      },
+      "checker_zip": {
+        "path": "hereditary-density-c9/erdos-556-c9-hereditary-density-certificate.zip",
+        "sha256": "577bd00c3e4008254d556aa64bac494f7e9bfc40e224dd06c931c70471f0f24d"
+      },
+      "proof": {
+        "path": "hereditary-density-c9/C9-HEREDITARY-DENSITY.md",
+        "sha256": "5fe5cdd8927b4147b4291a604383674898c6d50096fe8ea4c54a850d2faf2a58"
+      },
+      "entrypoint": "hereditary-density-c9/verify-hereditary-density.py"
+    },
+    "answer-48": {
+      "reference_json": {
+        "path": "minimum-degree-pentagons-c9/minimum-degree-pentagons-certificate.json",
+        "sha256": "fab8377c2f8392e5711ebabc84e9ef67f04045f148bd7e20c2747a9acaec1485"
+      },
+      "checker_zip": {
+        "path": "minimum-degree-pentagons-c9/erdos-556-c9-minimum-degree-pentagons-certificate.zip",
+        "sha256": "f3a5bde4321a9dcc47eb00ce0d5e8ed27b07583462c688b3757cef589f2e9cdf"
+      },
+      "proof": {
+        "path": "minimum-degree-pentagons-c9/C9-MINIMUM-DEGREE-PENTAGONS.md",
+        "sha256": "65d601da268aad1a0382fee710f2f41fc1ac250b3aeaa95ca531058321331871"
+      },
+      "entrypoint": "minimum-degree-pentagons-c9/verify-minimum-degree-pentagons.py"
+    },
+    "answer-49": {
+      "reference_json": {
+        "path": "k5-minimum-degree-c9/k5-minimum-degree-certificate.json",
+        "sha256": "5404ea3d5d9bb9cec05ad9f9ade42253f15f7955620c0e1516cc228c9952df92"
+      },
+      "checker_zip": {
+        "path": "k5-minimum-degree-c9/erdos-556-c9-k5-minimum-degree-certificate.zip",
+        "sha256": "6ba10b4dcab6d202895629244ebe26a7f9244df0ef95a03014f48ed33fe2ef1e"
+      },
+      "proof": {
+        "path": "k5-minimum-degree-c9/C9-K5-MINIMUM-DEGREE.md",
+        "sha256": "84ab6949d3af0cb57ea111f3fda7cbbc0fd0749bbe446629746303d8a0a92e4e"
+      },
+      "entrypoint": "k5-minimum-degree-c9/verify-k5-minimum-degree.py"
+    },
+    "answer-50": {
+      "reference_json": {
+        "path": "k4-minimum-degree-c9/k4-minimum-degree-certificate.json",
+        "sha256": "d1e3457c8351f46760186894734739bb1bd511312f495909a1d8f706f255a8fa"
+      },
+      "checker_zip": {
+        "path": "k4-minimum-degree-c9/erdos-556-c9-k4-minimum-degree-certificate.zip",
+        "sha256": "708285e69356e5209717b690053d8ae078f891e6de62b5b5d1a806ee8ac8bfd3"
+      },
+      "proof": {
+        "path": "k4-minimum-degree-c9/C9-K4-MINIMUM-DEGREE.md",
+        "sha256": "1b9f6897536bc2311186f53a5f34a72bcd2a12ce31a8a4e7d6a1415c6299b840"
+      },
+      "entrypoint": "k4-minimum-degree-c9/verify-k4-minimum-degree.py"
+    },
+    "answer-51": {
+      "reference_json": {
+        "path": "k3-minimum-degree-c9/k3-minimum-degree-certificate.json",
+        "sha256": "6999a976e16de52a6cd4e3ea4d9916ca13c2b22dc20905cffc24cc296dddeecf"
+      },
+      "checker_zip": {
+        "path": "k3-minimum-degree-c9/erdos-556-c9-k3-minimum-degree-certificate.zip",
+        "sha256": "eb8dfc7127984a8321487d93713878df4d85e389b8077747c987623e34337f00"
+      },
+      "proof": {
+        "path": "k3-minimum-degree-c9/C9-K3-MINIMUM-DEGREE.md",
+        "sha256": "8cb0b0767d3723c2094d5d6509559e8ed2b413a95d35537f20edfcdb52733374"
+      },
+      "entrypoint": "k3-minimum-degree-c9/verify-k3-minimum-degree.py"
+    }
+  }
+}
